@@ -43,7 +43,8 @@ noremap H ^
 noremap L $
 
 :autocmd FileType markdown nmap <leader>zx :call system('open -a Marked.app ' . expand("%:p"))<cr>
-:autocmd FileType html nmap <leader>zx :call system('open '. expand("%:p"))<cr>
+:autocmd FileType html nmap <leader>zx :call system('open ' . expand("%:p"))<cr>
+:autocmd FileType ruby nmap <leader>zx :!clear; ruby %<cr>
 
 nnoremap <leader>< i<%  %><esc>2hi
 inoremap <leader>< <%  %><esc>2hi
