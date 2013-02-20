@@ -1,0 +1,52 @@
+[user]
+  name = Chris Thorn
+  email = thorncp@gmail.com
+
+[github]
+  user = thorncp
+  password = !security 2>&1 >/dev/null find-generic-password -gs github.password | ruby -e 'print $1 if STDIN.gets =~ /^password: \\\"(.*)\\\"$/'
+
+[alias]
+  co = checkout
+  d = diff
+  dc = diff --cached
+  wd = diff --word-diff
+  aa = add -A
+  ap = add -p
+  s = status
+  ci = commit
+  b = branch
+  amend = commit --amend
+  l = "log --graph --pretty='format:%C(yellow)%h %C(green)%ar %C(cyan)%an %C(red)%d %C(reset)%s'"
+  la = "!git l --all"
+  lt = "!git l --simplify-by-decoration"
+
+[color]
+  branch = auto
+  diff = auto
+  status = auto
+  grep = always
+
+[color "branch"]
+  current = yellow reverse
+  local = yellow
+  remote = green
+
+[color "diff"]
+  meta = yellow bold
+  frag = magenta bold
+  old = red bold
+  new = green bold
+
+[color "status"]
+  added = yellow
+  changed = green
+  untracked = cyan
+
+[core]
+  editor = "mvim -v"
+  excludesfile = /Users/cthorn/.gitignore_global
+  whitespace = cr-at-eol
+
+[push]
+  default = tracking
