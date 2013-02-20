@@ -11,6 +11,7 @@ include() {
 
 include "colors.sh"
 include "git-completion.bash"
+include "git-utils.bash"
 include "environment.bash"
 include "prompt.bash"
 include "note.bash"
