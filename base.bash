@@ -5,8 +5,14 @@ fi
 
 export THORNCP_DOTFILES_DIR=$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)
 
+thorncp-file() {
+  [[ -z $1 ]] && return 1
+  echo "$THORNCP_DOTFILES_DIR/$1"
+}
+
 include() {
-  [[ -f "$THORNCP_DOTFILES_DIR/$1" ]] && source "$THORNCP_DOTFILES_DIR/$1"
+  [[ -z $1 ]] && return 1
+  [[ -f "$(thorncp-file $1)" ]] && source "$(thorncp-file $1)"
 }
 
 include "colors.sh"
@@ -17,3 +23,4 @@ include "prompt.bash"
 include "note.bash"
 include "code.bash"
 include "postgres.bash"
+include "vim.bash"
