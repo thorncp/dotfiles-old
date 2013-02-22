@@ -14,5 +14,5 @@ note() {
 }
 
 tmp() {
-  $EDITOR ~/docs/tmp.md
+  $EDITOR ~/tmp.md
 }
