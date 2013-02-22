@@ -12,3 +12,7 @@ note() {
 
   $EDITOR $file
 }
+
+tmp() {
+  $EDITOR ~/docs/tmp.md
+}
