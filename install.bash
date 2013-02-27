@@ -19,6 +19,7 @@ install() {
 
 install .vimrc
 install .gitconfig
+install .slate
 
 base="$dir/base.bash"
 if grep -q "$base" ~/.bash_profile ; then

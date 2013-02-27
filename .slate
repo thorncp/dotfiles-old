@@ -1,0 +1,108 @@
+config defaultToCurrentScreen true
+config nudgePercentOf screenSize
+config resizePercentOf screenSize
+config windowHintsIgnoreHiddenWindows false
+config windowHintsShowIcons true
+config windowHintsSpread true
+config layoutFocusOnActivate true
+config windowHintsSpreadSearchWidth 150
+config windowHintsSpreadSearchHeight 150
+
+# Resize Bindings
+bind right:ctrl;alt       resize +10% +0
+bind left:ctrl;alt        resize -10% +0
+bind up:ctrl;alt          resize +0   -10%
+bind down:ctrl;alt        resize +0   +10%
+
+# full horizontal, full vertical
+alias h100-c-v100-m     move screenOriginX;screenOriginY                                    screenSizeX;screenSizeY
+
+# half horizontal
+#   full vertical
+alias h50-l-v100-f      move screenOriginX;screenOriginY                                    screenSizeX/2;screenSizeY
+alias h50-r-v100-f      move screenOriginX+screenSizeX/2;screenOriginY                      screenSizeX/2;screenSizeY
+#   half vertical
+alias h50-l-v50-b       move screenOriginX;screenOriginY+screenSizeY/2                      screenSizeX/2;screenSizeY/2
+alias h50-l-v50-t       move screenOriginX;screenOriginY                                    screenSizeX/2;screenSizeY/2
+alias h50-r-v50-b       move screenOriginX+screenSizeX/2;screenOriginY+screenSizeY/2        screenSizeX/2;screenSizeY/2
+alias h50-r-v50-t       move screenOriginX+screenSizeX/2;screenOriginY                      screenSizeX/2;screenSizeY/2
+#   two thirds vertical
+alias h50-l-v66-b       move screenOriginX;screenOriginY+screenSizeY/3                      screenSizeX/2;2*screenSizeY/3
+alias h50-l-v66-t       move screenOriginX;screenOriginY                                    screenSizeX/2;2*screenSizeY/3
+alias h50-r-v66-b       move screenOriginX+screenSizeX/2;screenOriginY+screenSizeY/3        screenSizeX/2;2*screenSizeY/3
+alias h50-r-v66-t       move screenOriginX+screenSizeX/2;screenOriginY                      screenSizeX/2;2*screenSizeY/3
+#   third vertical
+alias h50-l-v33-b       move screenOriginX;screenOriginY+2*screenSizeY/3                    screenSizeX/2;screenSizeY/3
+alias h50-l-v33-m       move screenOriginX;screenOriginY+screenSizeY/3                      screenSizeX/2;screenSizeY/3
+alias h50-l-v33-t       move screenOriginX;screenOriginY                                    screenSizeX/2;screenSizeY/3
+alias h50-r-v33-b       move screenOriginX+screenSizeX/2;screenOriginY+2*screenSizeY/3      screenSizeX/2;screenSizeY/3
+alias h50-r-v33-m       move screenOriginX+screenSizeX/2;screenOriginY+screenSizeY/3        screenSizeX/2;screenSizeY/3
+alias h50-r-v33-t       move screenOriginX+screenSizeX/2;screenOriginY                      screenSizeX/2;screenSizeY/3
+
+# two thirds horizontal
+#   full vertical
+alias h66-l-v100-f      move screenOriginX;screenOriginY                                    2*screenSizeX/3;screenSizeY
+alias h66-r-v100-f      move screenOriginX+screenSizeX/3;screenOriginY                      2*screenSizeX/3;screenSizeY
+#   half vertical
+alias h66-l-v50-b       move screenOriginX;screenOriginY+screenSizeY/2                      2*screenSizeX/3;screenSizeY/2
+alias h66-l-v50-t       move screenOriginX;screenOriginY                                    2*screenSizeX/3;screenSizeY/2
+alias h66-r-v50-b       move screenOriginX+screenSizeX/3;screenOriginY+screenSizeY/2        2*screenSizeX/3;screenSizeY/2
+alias h66-r-v50-t       move screenOriginX+screenSizeX/3;screenOriginY                      2*screenSizeX/3;screenSizeY/2
+#   two thirds vertical
+alias h66-l-v66-b       move screenOriginX;screenOriginY+screenSizeY/3                      2*screenSizeX/3;2*screenSizeY/3
+alias h66-l-v66-t       move screenOriginX;screenOriginY                                    2*screenSizeX/3;2*screenSizeY/3
+alias h66-r-v66-b       move screenOriginX+screenSizeX/3;screenOriginY+screenSizeY/3        2*screenSizeX/3;2*screenSizeY/3
+alias h66-r-v66-t       move screenOriginX+screenSizeX/3;screenOriginY                      2*screenSizeX/3;2*screenSizeY/3
+#   third vertical
+alias h66-l-v33-b       move screenOriginX;screenOriginY+2*screenSizeY/3                    2*screenSizeX/3;screenSizeY/3
+alias h66-l-v33-m       move screenOriginX;screenOriginY+screenSizeY/3                      2*screenSizeX/3;screenSizeY/3
+alias h66-l-v33-t       move screenOriginX;screenOriginY                                    2*screenSizeX/3;screenSizeY/3
+alias h66-r-v33-b       move screenOriginX+screenSizeX/3;screenOriginY+2*screenSizeY/3      2*screenSizeX/3;screenSizeY/3
+alias h66-r-v33-m       move screenOriginX+screenSizeX/3;screenOriginY+screenSizeY/3        2*screenSizeX/3;screenSizeY/3
+alias h66-r-v33-t       move screenOriginX+screenSizeX/3;screenOriginY                      2*screenSizeX/3;screenSizeY/3
+
+# third horizontal
+#   full vertical
+alias h33-l-v100-f      move screenOriginX;screenOriginY                                    screenSizeX/3;screenSizeY
+alias h33-c-v100-f      move screenOriginX+screenSizeX/3;screenOriginY                      screenSizeX/3;screenSizeY
+alias h33-r-v100-f      move screenOriginX+2*screenSizeX/3;screenOriginY                    screenSizeX/3;screenSizeY
+#   half vertical
+alias h33-l-v50-b       move screenOriginX;screenOriginY+screenSizeY/2                      screenSizeX/3;screenSizeY/2
+alias h33-l-v50-t       move screenOriginX;screenOriginY                                    screenSizeX/3;screenSizeY/2
+alias h33-c-v50-b       move screenOriginX+screenSizeX/3;screenOriginY+screenSizeY/2        screenSizeX/3;screenSizeY/2
+alias h33-c-v50-t       move screenOriginX+screenSizeX/3;screenOriginY                      screenSizeX/3;screenSizeY/2
+alias h33-r-v50-b       move screenOriginX+2*screenSizeX/3;screenOriginY+screenSizeY/2      screenSizeX/3;screenSizeY/2
+alias h33-r-v50-t       move screenOriginX+2*screenSizeX/3;screenOriginY                    screenSizeX/3;screenSizeY/2
+#   two thirds vertical
+alias h33-l-v66-b       move screenOriginX;screenOriginY+screenSizeY/3                      screenSizeX/3;2*screenSizeY/3
+alias h33-l-v66-t       move screenOriginX;screenOriginY                                    screenSizeX/3;2*screenSizeY/3
+alias h33-c-v66-b       move screenOriginX+screenSizeX/3;screenOriginY+screenSizeY/3        screenSizeX/3;2*screenSizeY/3
+alias h33-c-v66-t       move screenOriginX+screenSizeX/3;screenOriginY                      screenSizeX/3;2*screenSizeY/3
+alias h33-r-v66-b       move screenOriginX+2*screenSizeX/3;screenOriginY+screenSizeY/3      screenSizeX/3;2*screenSizeY/3
+alias h33-r-v66-t       move screenOriginX+2*screenSizeX/3;screenOriginY                    screenSizeX/3;2*screenSizeY/3
+#   third vertical
+alias h33-l-v33-b       move screenOriginX;screenOriginY+2*screenSizeY/3                    screenSizeX/3;screenSizeY/3
+alias h33-l-v33-m       move screenOriginX;screenOriginY+screenSizeY/3                      screenSizeX/3;screenSizeY/3
+alias h33-l-v33-t       move screenOriginX;screenOriginY                                    screenSizeX/3;screenSizeY/3
+alias h33-c-v33-b       move screenOriginX+screenSizeX/3;screenOriginY+2*screenSizeY/3      screenSizeX/3;screenSizeY/3
+alias h33-c-v33-m       move screenOriginX+screenSizeX/3;screenOriginY+screenSizeY/3        screenSizeX/3;screenSizeY/3
+alias h33-c-v33-t       move screenOriginX+screenSizeX/3;screenOriginY                      screenSizeX/3;screenSizeY/3
+alias h33-r-v33-b       move screenOriginX+2*screenSizeX/3;screenOriginY+2*screenSizeY/3    screenSizeX/3;screenSizeY/3
+alias h33-r-v33-m       move screenOriginX+2*screenSizeX/3;screenOriginY+screenSizeY/3      screenSizeX/3;screenSizeY/3
+alias h33-r-v33-t       move screenOriginX+2*screenSizeX/3;screenOriginY                    screenSizeX/3;screenSizeY/3
+
+layout code 'iTerm' ${h100-c-v100-m}
+
+layout markdown 'Marked' ${h33-r-v100-f}
+layout markdown 'iTerm' ${h66-l-v100-f}
+
+layout chat 'Textual' ${h50-l-v50-t}
+layout chat 'Propane' ${h50-l-v50-b}
+layout chat 'Skype' ${h50-r-v100-f}
+
+bind 1:ctrl,space layout code
+bind 2:ctrl,space layout markdown
+bind 3:ctrl,space layout chat
+
+bind e:ctrl,space hint ASDFQWZXCV;YUIOPBNM,
+bind r:ctrl,space relaunch
