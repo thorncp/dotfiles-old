@@ -21,7 +21,9 @@ set incsearch
 let g:ctrlp_max_height = 25
 let g:ctrlp_working_path_mode = 0
 
-:colorscheme railscasts256
+if !has("gui_running")
+  colorscheme railscasts256
+endif
 
 set ruler
 set list listchars=tab:\ \ ,trail:·
