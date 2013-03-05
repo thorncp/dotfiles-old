@@ -25,6 +25,8 @@ if !has("gui_running")
   colorscheme railscasts256
 endif
 
+highlight clear SignColumn
+
 set ruler
 set list listchars=tab:\ \ ,trail:·
 highlight Special guifg=#00FFFF guibg=#00FFFF
