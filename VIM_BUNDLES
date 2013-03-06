@@ -7,7 +7,6 @@ git://github.com/godlygeek/tabular.git
 git://github.com/kchmck/vim-coffee-script.git
 git://github.com/tpope/vim-commentary.git
 git://github.com/tpope/vim-endwise.git
-git://github.com/airblade/vim-gitgutter.git
 git://github.com/briancollins/vim-jst.git
 git://github.com/groenewege/vim-less.git
 git://github.com/tpope/vim-markdown.git
