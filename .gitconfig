@@ -50,3 +50,6 @@
 
 [push]
   default = tracking
+
+[merge]
+  ff = false
