@@ -1,4 +1,4 @@
-# shortcut to cd into ~/code with ls-like tab completion
+# shortcut to cd into ~/code with cd-like tab completion
 code() {
   cd ~/code/$1
 }
