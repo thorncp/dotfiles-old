@@ -1,4 +1,26 @@
-call pathogen#infect()
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+
+Bundle 'briancollins/vim-jst'
+Bundle 'derekwyatt/vim-scala'
+Bundle 'godlygeek/tabular'
+Bundle 'groenewege/vim-less'
+Bundle 'kchmck/vim-coffee-script'
+Bundle 'kien/ctrlp'
+Bundle 'tpope/vim-commentary'
+Bundle 'tpope/vim-endwise'
+Bundle 'tpope/vim-markdown'
+Bundle 'tpope/vim-ragtag'
+Bundle 'tpope/vim-rails'
+Bundle 'tpope/vim-repeat'
+Bundle 'tpope/vim-surround'
+Bundle 'vim-scripts/Vim-R-plugin'
+Bundle 'vim-scripts/golden-ratio'
 
 syntax on
 filetype plugin indent on
