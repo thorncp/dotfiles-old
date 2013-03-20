@@ -8,12 +8,6 @@ config layoutFocusOnActivate true
 config windowHintsSpreadSearchWidth 150
 config windowHintsSpreadSearchHeight 150
 
-# Resize Bindings
-bind right:ctrl;alt       resize +10% +0
-bind left:ctrl;alt        resize -10% +0
-bind up:ctrl;alt          resize +0   -10%
-bind down:ctrl;alt        resize +0   +10%
-
 # full horizontal, full vertical
 alias h100-c-v100-m     move screenOriginX;screenOriginY                                    screenSizeX;screenSizeY
 
@@ -90,6 +84,14 @@ alias h33-c-v33-t       move screenOriginX+screenSizeX/3;screenOriginY          
 alias h33-r-v33-b       move screenOriginX+2*screenSizeX/3;screenOriginY+2*screenSizeY/3    screenSizeX/3;screenSizeY/3
 alias h33-r-v33-m       move screenOriginX+2*screenSizeX/3;screenOriginY+screenSizeY/3      screenSizeX/3;screenSizeY/3
 alias h33-r-v33-t       move screenOriginX+2*screenSizeX/3;screenOriginY                    screenSizeX/3;screenSizeY/3
+
+# Resize Bindings
+bind right:ctrl;alt       resize +10% +0
+bind left:ctrl;alt        resize -10% +0
+bind up:ctrl;alt          resize +0   -10%
+bind down:ctrl;alt        resize +0   +10%
+
+bind m:ctrl,space ${h100-c-v100-m}
 
 layout code 'iTerm' ${h100-c-v100-m}
 
