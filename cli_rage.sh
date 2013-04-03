@@ -21,6 +21,7 @@ intrigue_aliases=(
   "wow"
   "neat"
   "holy"
+  "wat"
 )
 
 cli_rage_anger() {
