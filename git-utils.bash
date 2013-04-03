@@ -16,3 +16,7 @@ cleanhouse() {
     fi
   done
 }
+
+if [ -n $(which hub) ]; then
+  eval "$(hub alias -s)"
+fi
