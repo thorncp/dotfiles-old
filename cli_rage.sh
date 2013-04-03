@@ -1,27 +1,27 @@
 anger_aliases=(
-  "balls"
-  "fu"
-  "fuu"
-  "fuuu"
-  "ffu"
-  "ffuu"
-  "ffuuu"
-  "fffu"
-  "fffuu"
-  "fffuuu"
-  "fuck"
-  "shit"
-  "omg"
-  "wtf"
-  "zomg"
+  balls
+  fu
+  fuu
+  fuuu
+  ffu
+  ffuu
+  ffuuu
+  fffu
+  fffuu
+  fffuuu
+  fuck
+  shit
+  omg
+  wtf
+  zomg
 )
 
 intrigue_aliases=(
-  "huh"
-  "wow"
-  "neat"
-  "holy"
-  "wat"
+  huh
+  wow
+  neat
+  holy
+  wat
 )
 
 cli_rage_anger() {
