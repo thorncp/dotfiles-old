@@ -113,10 +113,10 @@ function! RSpecFile ()
     let g:specfile = bufname("%")
     " let g:linenum = ""
     exec ":wa"
-    exec "!clear & rspec --order random " g:specfile
+    exec "!clear & rspec --format documentation --order random " g:specfile
   elseif len(g:specfile) > 0
     exec ":wa"
-    exec "!clear & rspec --order random " g:specfile
+    exec "!clear & rspec --format documentation --order random " g:specfile
   else
     echo "not enough info to run"
   endif
