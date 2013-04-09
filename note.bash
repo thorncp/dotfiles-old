@@ -8,7 +8,7 @@ note() {
 
   concatted=$*
   trimmed=${concatted//[^a-zA-Z0-9]/-}
-  file="$trimmed-$(date +"%Y-%m-%d").md"
+  file="$trimmed-$(date +"%F").md"
 
   $EDITOR $file
 }
