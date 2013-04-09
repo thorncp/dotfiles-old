@@ -16,3 +16,11 @@ note() {
 tmp() {
   $EDITOR ~/tmp.md
 }
+
+scrum() {
+  if [ -e $1 ]; then
+    $EDITOR ~/.scrum
+  else
+    echo "$(date +"%F %R") - $*" >> ~/.scrum
+  fi
+}
