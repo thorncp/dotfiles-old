@@ -102,8 +102,8 @@ layout chat 'Textual' ${h50-l-v50-t}
 layout chat 'Propane' ${h50-l-v50-b}
 layout chat 'Skype' ${h50-r-v100-f}
 
-layout scrum 'Google Chrome' ${h66-l-v100-f}
-layout scrum 'Skype' ${h33-r-v100-f}
+layout scrum 'iTerm' ${h50-l-v100-f}
+layout scrum 'Skype' ${h50-r-v100-f}
 
 bind 1:ctrl,space layout code
 bind 2:ctrl,space layout markdown
