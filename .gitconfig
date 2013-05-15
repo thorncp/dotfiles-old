@@ -47,6 +47,8 @@
   editor = "mvim -v"
   excludesfile = /Users/cthorn/.gitignore_global
   whitespace = cr-at-eol
-
+  autcrlf = false
 [push]
   default = tracking
+[branch]
+  autosetuprebase = always
