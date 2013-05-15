@@ -21,6 +21,7 @@ Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
 Bundle 'vim-scripts/Vim-R-plugin'
 Bundle 'vim-scripts/golden-ratio'
+Bundle 'vim-ruby/vim-ruby'
 
 syntax on
 filetype plugin indent on
