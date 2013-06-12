@@ -16,7 +16,7 @@
   s = status
   ci = commit
   b = branch
-  amend = commit --amend
+  amend = commit --amend -C HEAD
   l = "log --graph --pretty='format:%C(yellow)%h %C(green)%ar %C(cyan)%an %C(red)%d %C(reset)%s'"
   la = "!git l --all"
   lt = "!git l --simplify-by-decoration"
