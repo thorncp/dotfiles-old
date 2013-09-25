@@ -36,6 +36,7 @@ autocmd FileType c setlocal shiftwidth=4 tabstop=4
 autocmd FileType *.h setlocal shiftwidth=4 tabstop=4
 
 set laststatus=2
+set relativenumber
 set number
 set shell=sh
 set ic
