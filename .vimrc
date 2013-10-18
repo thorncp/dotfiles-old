@@ -63,7 +63,7 @@ syn match CamelCase "\<\%(\u\l*\)\{2,}\>" contains=@NoSpell
 syn match CamelCase2 transparent "\<\%(\u\l*\)\{2,}\>" contains=@NoSpell contained
 autocmd Syntax * syn match CamelCase "\<\%(\u\l*\)\{2,}\>" transparent containedin=.*Comment.* contains=@NoSpell contained
 
-set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/tmp/*,*/log/*,*/.DS_Store,*/spec/reports/*,*/public/system/*,*.dSYM/*,*/build/* " ,*/vendor/*
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/tmp/*,*/log/*,*/.DS_Store,*/spec/reports/*,*/public/system/*,*.dSYM/*,*/build/*,*/_site/* " ,*/vendor/*
 
 inoremap jk <esc>
 inoremap kj <esc>
