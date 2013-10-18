@@ -11,4 +11,4 @@ function parse_git_branch {
   git branch --no-color 2> /dev/null | sed -e '/^[^*]/d' -e "s/* \(.*\)/$(parse_git_dirty)\1/"
 }
 
-export PS1="$(wrap_exit_status '\w') \$(~/.rvm/bin/rvm-prompt) $IYellow\$(parse_git_branch)$Color_Off\n\$ "
+export PS1="$(wrap_exit_status '\w') $IYellow\$(parse_git_branch)$Color_Off\n\$ "
