@@ -65,9 +65,6 @@ autocmd Syntax * syn match CamelCase "\<\%(\u\l*\)\{2,}\>" transparent contained
 
 set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/tmp/*,*/log/*,*/.DS_Store,*/spec/reports/*,*/public/system/*,*.dSYM/*,*/build/*,*/_site/* " ,*/vendor/*
 
-inoremap jk <esc>
-inoremap kj <esc>
-
 noremap H ^
 noremap L $
 
