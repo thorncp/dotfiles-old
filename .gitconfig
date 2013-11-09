@@ -13,7 +13,7 @@
   wd = diff --word-diff
   aa = add -A
   ap = add -p
-  s = status
+  s = status -sb
   ci = commit
   b = branch
   amend = commit --amend -C HEAD
