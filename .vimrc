@@ -32,6 +32,7 @@ runtime macros/matchit.vim
 set tabstop=2
 set shiftwidth=2
 set expandtab
+set noesckeys
 
 autocmd FileType c setlocal shiftwidth=4 tabstop=4
 autocmd FileType *.h setlocal shiftwidth=4 tabstop=4
