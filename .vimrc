@@ -20,9 +20,10 @@ Bundle 'tpope/vim-ragtag'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-repeat'
 Bundle 'tpope/vim-surround'
+Bundle 'vim-ruby/vim-ruby'
 Bundle 'vim-scripts/Vim-R-plugin'
 Bundle 'vim-scripts/golden-ratio'
-Bundle 'vim-ruby/vim-ruby'
+Bundle 'wting/rust.vim'
 
 syntax on
 filetype plugin indent on
