@@ -51,4 +51,4 @@
   whitespace = cr-at-eol
   autcrlf = false
 [push]
-  default = tracking
+  default = upstream
