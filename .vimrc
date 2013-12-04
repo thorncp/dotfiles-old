@@ -73,8 +73,8 @@ noremap L $
 :autocmd FileType markdown nmap <leader>zx :call system('open -a Marked.app ' . expand("%:p"))<cr>
 :autocmd FileType html nmap <leader>zx :call system('open ' . expand("%:p"))<cr>
 :autocmd FileType ruby nmap <leader>zx :!clear; ruby %<cr>
-:autocmd FileType rust nmap <leader>zx :!clear; rust run %<cr>
-:autocmd FileType rust nmap <leader>zz :!clear; rust test %<cr>
+:autocmd FileType rust nmap <leader>zx :!clear; rustc % && ./%:r<cr>
+:autocmd FileType rust nmap <leader>zz :!clear; rustc --test % && ./%:r<cr>
 
 nnoremap <leader>< i<%  %><esc>2hi
 inoremap <leader>< <%  %><esc>2hi
