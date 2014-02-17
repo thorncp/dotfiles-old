@@ -36,6 +36,7 @@ set noesckeys
 
 autocmd FileType c setlocal shiftwidth=4 tabstop=4
 autocmd FileType *.h setlocal shiftwidth=4 tabstop=4
+autocmd FileType python setlocal shiftwidth=4 tabstop=4
 
 set laststatus=2
 set relativenumber
@@ -65,7 +66,7 @@ syn match CamelCase "\<\%(\u\l*\)\{2,}\>" contains=@NoSpell
 syn match CamelCase2 transparent "\<\%(\u\l*\)\{2,}\>" contains=@NoSpell contained
 autocmd Syntax * syn match CamelCase "\<\%(\u\l*\)\{2,}\>" transparent containedin=.*Comment.* contains=@NoSpell contained
 
-set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/tmp/*,*/log/*,*/.DS_Store,*/spec/reports/*,*/public/system/*,*.dSYM/*,*/build/*,*/_site/* " ,*/vendor/*
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/tmp/*,*/log/*,*/.DS_Store,*/spec/reports/*,*/public/system/*,*.dSYM/*,*/build/*,*/_site/*,*/*.pyc " ,*/vendor/*
 
 :autocmd FileType markdown nmap <leader>zx :call system('open -a Marked.app ' . expand("%:p"))<cr>
 :autocmd FileType html nmap <leader>zx :call system('open ' . expand("%:p"))<cr>
