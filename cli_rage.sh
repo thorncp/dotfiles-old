@@ -22,6 +22,9 @@ intrigue_aliases=(
   neat
   holy
   wat
+  hmm
+  hmmm
+  hmmmm
 )
 
 cli_rage_anger() {
