@@ -33,6 +33,7 @@ set tabstop=2
 set shiftwidth=2
 set expandtab
 set noesckeys
+set showcmd
 
 autocmd FileType c setlocal shiftwidth=4 tabstop=4
 autocmd FileType *.h setlocal shiftwidth=4 tabstop=4
