@@ -57,7 +57,7 @@ endif
 highlight clear SignColumn
 
 set ruler
-set list listchars=tab:\ \ ,trail:·
+set list listchars=tab:\⟼\ ,trail:·
 highlight Special guifg=#00FFFF guibg=#00FFFF
 
 set t_Co=256
