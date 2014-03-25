@@ -20,3 +20,7 @@ cleanhouse() {
 if [ -n $(which hub) ]; then
   eval "$(hub alias -s)"
 fi
+
+if [ -n $(which gist) ]; then
+  alias gist="gist -c -p"
+fi
