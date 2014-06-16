@@ -6,3 +6,7 @@ code() {
   fi
   clear
 }
+
+if command -v python > /dev/null; then
+  alias json='python -mjson.tool'
+fi
