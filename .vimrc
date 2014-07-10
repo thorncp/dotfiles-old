@@ -102,10 +102,10 @@ function! RSpecSingle ()
     let g:specfile = bufname("%")
     let g:linenum = line(".")
     exec ":wa"
-    exec "!clear & rspec " g:specfile " -l " g:linenum
+    exec "!clear & bundle exec rspec " . g:specfile . ":" . g:linenum
   elseif len(g:specfile) > 0 && len(g:linenum) > 0
     exec ":wa"
-    exec "!clear & rspec " g:specfile " -l " g:linenum
+    exec "!clear & bundle exec rspec " . g:specfile . ":" . g:linenum
   else
     echo "not enough info to run"
   endif
@@ -116,10 +116,10 @@ function! RSpecFile ()
     let g:specfile = bufname("%")
     " let g:linenum = ""
     exec ":wa"
-    exec "!clear & rspec --format documentation --order random " g:specfile
+    exec "!clear & bundle exec rspec --format documentation --order random " g:specfile
   elseif len(g:specfile) > 0
     exec ":wa"
-    exec "!clear & rspec --format documentation --order random " g:specfile
+    exec "!clear & bundle exec rspec --format documentation --order random " g:specfile
   else
     echo "not enough info to run"
   endif
@@ -127,7 +127,7 @@ endfunction
 
 function! RSpecSuite ()
   exec ":wa"
-  exec "!clear & rspec --format progress --order random"
+  exec "!clear & bundle exec rspec --format progress --order random"
 endfunction
 
 nnoremap <leader>zs :call RSpecSingle()<cr>
