@@ -12,6 +12,7 @@ Bundle 'godlygeek/tabular'
 Bundle 'groenewege/vim-less'
 Bundle 'kchmck/vim-coffee-script'
 Bundle 'kien/ctrlp.vim'
+Bundle 'pangloss/vim-javascript'
 Bundle 'tpope/vim-commentary'
 Bundle 'tpope/vim-endwise'
 Bundle 'tpope/vim-fugitive'
@@ -38,6 +39,8 @@ set showcmd
 autocmd FileType c setlocal shiftwidth=4 tabstop=4
 autocmd FileType *.h setlocal shiftwidth=4 tabstop=4
 autocmd FileType python setlocal shiftwidth=4 tabstop=4
+autocmd FileType rust setlocal shiftwidth=4 tabstop=4
+autocmd FileType cs setlocal shiftwidth=4 tabstop=4
 
 set laststatus=2
 set relativenumber
@@ -54,6 +57,8 @@ if !has("gui_running")
   colorscheme railscasts256
 endif
 
+set guifont=Source\ Code\ Pro\ Medium:h16
+
 highlight clear SignColumn
 
 set ruler
@@ -67,13 +72,16 @@ syn match CamelCase "\<\%(\u\l*\)\{2,}\>" contains=@NoSpell
 syn match CamelCase2 transparent "\<\%(\u\l*\)\{2,}\>" contains=@NoSpell contained
 autocmd Syntax * syn match CamelCase "\<\%(\u\l*\)\{2,}\>" transparent containedin=.*Comment.* contains=@NoSpell contained
 
-set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/tmp/*,*/log/*,*/.DS_Store,*/spec/reports/*,*/public/system/*,*.dSYM/*,*/build/*,*/_site/*,*/*.pyc " ,*/vendor/*
+set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/tmp/*,*/log/*,*/.DS_Store,*/spec/reports/*,*/public/system/*,*.dSYM/*,*/build/*,*/_site/*,*/*.pyc,*/node_modules/*,*/vendor/*
 
 :autocmd FileType markdown nmap <leader>zx :call system('open -a Marked.app ' . expand("%:p"))<cr>
 :autocmd FileType html nmap <leader>zx :call system('open ' . expand("%:p"))<cr>
 :autocmd FileType ruby nmap <leader>zx :!clear; ruby %<cr>
+
 :autocmd FileType rust nmap <leader>zx :!clear; rustc % && ./%:r<cr>
-:autocmd FileType rust nmap <leader>zz :!clear; rustc --test % && ./%:r<cr>
+:autocmd FileType rust nmap <leader>zz :!clear; rustc --test % && ./%<cr>
+
+:autocmd FileType javascript nmap <leader>zx :!clear; node %<cr>
 
 nnoremap <leader>< i<%  %><esc>2hi
 inoremap <leader>< <%  %><esc>2hi
