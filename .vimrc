@@ -47,7 +47,7 @@ set laststatus=2
 set relativenumber
 set number
 set shell=sh
-set ic
+set ignorecase
 set hlsearch
 set incsearch
 
