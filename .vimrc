@@ -7,6 +7,7 @@ call vundle#rc()
 Bundle 'gmarik/vundle'
 
 Bundle 'briancollins/vim-jst'
+Bundle 'cespare/vim-toml'
 Bundle 'derekwyatt/vim-scala'
 Bundle 'godlygeek/tabular'
 Bundle 'groenewege/vim-less'
