@@ -1,5 +1,4 @@
 anger_aliases=(
-  balls
   fu
   fuu
   fuuu
@@ -29,9 +28,8 @@ intrigue_aliases=(
 
 cli_rage_anger() {
   responses=(
-    "bro, calm down"
+    "yo, calm down"
     "fffffffuuuuuuuuuuuu"
-    "punch a fool"
     "whoa buddy!"
   )
 
@@ -43,6 +41,7 @@ cli_rage_intrigue() {
     "how about that"
     "indeed"
     "i'll be damned"
+    "huh indeed"
   )
 
   echo ${responses[$((RANDOM%${#responses[@]}))]}
