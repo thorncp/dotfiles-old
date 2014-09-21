@@ -79,8 +79,14 @@ set wildignore+=*/.git/*,*/.hg/*,*/.svn/*,*/tmp/*,*/log/*,*/.DS_Store,*/spec/rep
 :autocmd FileType html nmap <leader>zx :call system('open ' . expand("%:p"))<cr>
 :autocmd FileType ruby nmap <leader>zx :!clear; ruby %<cr>
 
-:autocmd FileType rust nmap <leader>zx :!clear; rustc % && ./%:r<cr>
-:autocmd FileType rust nmap <leader>zz :!clear; rustc --test % && ./%<cr>
+:autocmd FileType rust nmap <leader>zx :!clear; cargo run<cr>
+:autocmd FileType rust nmap <leader>zz :!clear; cargo test<cr>
+:autocmd FileType rust nmap <leader>za :!clear; cargo test<cr>
+:autocmd FileType rust nmap <leader>zs :!clear; cargo test<cr>
+
+" pretty format on save. this approach leaves the cursor at the top of the
+" file, so it's disabled for now. TODO: figure out how to not do that
+" :autocmd BufWritePost *.rs silent%!rustc --pretty=normal %
 
 :autocmd FileType javascript nmap <leader>zx :!clear; node %<cr>
 
@@ -139,9 +145,9 @@ function! RSpecSuite ()
   exec "!clear & bundle exec rspec --format progress --order random"
 endfunction
 
-nnoremap <leader>zs :call RSpecSingle()<cr>
-nnoremap <leader>zz :call RSpecFile()<cr>
-nnoremap <leader>za :call RSpecSuite()<cr>
+:autocmd FileType ruby nnoremap <leader>zs :call RSpecSingle()<cr>
+:autocmd FileType ruby nnoremap <leader>zz :call RSpecFile()<cr>
+:autocmd FileType ruby nnoremap <leader>za :call RSpecSuite()<cr>
 
 :nnoremap <CR> :nohlsearch<cr>
 
