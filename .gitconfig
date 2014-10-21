@@ -23,6 +23,7 @@
   lt = "!git l --simplify-by-decoration"
   rbc = rebase --continue
   rba = rebase --abort
+  au = add -u
 
 [color]
   branch = auto
