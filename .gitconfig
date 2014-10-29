@@ -19,8 +19,8 @@
   amend = commit --amend -C HEAD
   l = "!git ll -12"
   ll = "log --graph --pretty='format:%C(yellow)%h %C(green)%ar %C(cyan)%an %C(red)%d %C(reset)%s'"
-  la = "!git l --all"
-  lt = "!git l --simplify-by-decoration"
+  la = "!git ll --all"
+  lt = "!git ll --simplify-by-decoration"
   rbc = rebase --continue
   rba = rebase --abort
   au = add -u
