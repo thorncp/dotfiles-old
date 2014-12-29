@@ -42,6 +42,7 @@ autocmd FileType *.h setlocal shiftwidth=4 tabstop=4
 autocmd FileType python setlocal shiftwidth=4 tabstop=4
 autocmd FileType rust setlocal shiftwidth=4 tabstop=4
 autocmd FileType cs setlocal shiftwidth=4 tabstop=4
+autocmd BufNewFile,BufReadPost *.md set filetype=markdown
 
 set laststatus=2
 set relativenumber
